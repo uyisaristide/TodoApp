@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:todo/views/other_challenges/corrected_codes.dart';
 
 import '../models/task_model.dart';
 import '../views/home_screen.dart';
@@ -18,6 +19,10 @@ final GoRouter router = GoRouter(
     GoRoute(
       path: '/home',
       builder: (context, state) => const TasksScreen(),
+    ),
+    GoRoute(
+      path: '/userList',
+      builder: (context, state) =>  UserListScreen(),
     ),
 
     // Create or Edit Task Route
